@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.nav .nav-container .menu, .nav .nav-container .menu p, .nav .nav-container .about h3, .nav .nav-container .about .navCard p, .nav .nav-container .help h3, .nav .nav-container .help p, .nav .nav-container .help div p, .nav .nav-container .footer, .main .work .info h3, .main .work .info p, .main .articles .row .article p, .main .cards .card p, .main .information > div > div > div p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #7a7c7c; }
+
+.nav .nav-container .search, .nav .nav-container .menu, .nav .nav-container .about, .nav .nav-container .help, .nav .nav-container .footer {
+  width: 86%;
+  padding: 7% 7%; }
+
+.main {
+  width: 90%;
+  padding: 1% 5%; }
+
+.nav .nav-container .menu h3, .nav .nav-container .about h3, .nav .nav-container .help h3, .main h3.SMU, .main .articles h2, .main .information h2 {
+  color: #000;
+  position: relative;
+  display: inline-block; }
+  .nav .nav-container .menu h3::before, .nav .nav-container .about h3::before, .nav .nav-container .help h3::before, .main h3.SMU::before, .main .articles h2::before, .main .information h2::before {
+    content: "";
+    display: inline-block;
+    width: calc(100% + 10px);
+    height: 3px;
+    background: #609cf5;
+    position: absolute;
+    bottom: -30%;
+    left: 0px; }
+
+.nav .nav-container .menu p, .nav .nav-container .about .navCard, .nav .nav-container .help div, .main .work, .main .articles .row {
+  color: #000;
+  position: relative; }
+  .nav .nav-container .menu p::before, .nav .nav-container .about .navCard::before, .nav .nav-container .help div::before, .main .work::before, .main .articles .row::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background: #e0e3e5;
+    position: absolute;
+    bottom: -20px;
+    left: 0px; }
+
+.main .articles {
+  color: #000;
+  position: relative; }
+  .main .articles::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 92%;
+    background: #e0e3e5;
+    position: absolute;
+    top: 8%;
+    left: 50%; }
+
+.nav .nav-container .about .navCard p button, .main .work .info button, .main .articles .row .article button, .main .cards .card button {
+  color: #609cf5;
+  background: inherit;
+  padding: 3% 7%;
+  border: 2px solid #609cf5;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer; }
+  .nav .nav-container .about .navCard p button:hover, .main .work .info button:hover, .main .articles .row .article button:hover, .main .cards .card button:hover {
+    background-color: #dfebfd; }
+
+.nav .nav-container .about .navCard .image, .main .work .logo, .main .articles .row .article .image {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer; }
+  .nav .nav-container .about .navCard .image img, .main .work .logo img, .main .articles .row .article .image img {
+    width: 100%;
+    transition: transform .5s ease-out; }
+    .nav .nav-container .about .navCard .image img:hover, .main .work .logo img:hover, .main .articles .row .article .image img:hover {
+      transform: scale(1.1); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex; }
+
+.nav {
+  width: 20%;
+  display: none; }
+  .nav .nav-container {
+    background: #f4f7f8;
+    border-radius: 5px; }
+    .nav .nav-container .search {
+      background: #eff1f2; }
+      .nav .nav-container .search input {
+        padding: 3% 4%;
+        width: 92%;
+        outline: none;
+        border: 2px solid #e3e3e3;
+        border-radius: 5px; }
+    .nav .nav-container .menu h3 {
+      display: inline-block;
+      margin-top: 10%;
+      font-size: 18px; }
+    .nav .nav-container .menu p {
+      margin-top: 15%;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #7a7c7c; }
+      .nav .nav-container .menu p:hover {
+        color: #609cf5; }
+      .nav .nav-container .menu p::before {
+        bottom: -12px; }
+    .nav .nav-container .about h3 {
+      display: inline-block;
+      margin-top: 10%;
+      font-size: 18px; }
+    .nav .nav-container .about .navCard {
+      margin-top: 20%; }
+      .nav .nav-container .about .navCard p {
+        margin-top: 10%; }
+        .nav .nav-container .about .navCard p button {
+          margin-top: 7%; }
+    .nav .nav-container .help h3 {
+      display: inline-block;
+      margin-top: 10%;
+      font-size: 18px; }
+    .nav .nav-container .help p {
+      margin-top: 15%; }
+    .nav .nav-container .help div {
+      display: flex; }
+      .nav .nav-container .help div i {
+        font-size: 14px;
+        margin-top: 15%;
+        margin-right: 10%;
+        color: #609cf5;
+        margin-left: 2%; }
+      .nav .nav-container .help div p {
+        margin-top: 15%; }
+      .nav .nav-container .help div .email {
+        text-decoration: underline; }
+    .nav .nav-container .footer {
+      padding-top: 15%;
+      padding-bottom: 15%;
+      font-size: 12px; }
+
+.main div i {
+  font-size: 24px;
+  color: #609cf5;
+  margin-left: -3%;
+  margin-top: 1%;
+  cursor: pointer; }
+
+.main h3.SMU {
+  display: block; }
+  .main h3.SMU::before {
+    width: 100%;
+    bottom: -50%;
+    left: 0px; }
+
+.main .work {
+  display: flex;
+  margin-top: 5%; }
+  .main .work::before {
+    bottom: -50px; }
+  .main .work .info {
+    width: 50%;
+    padding-right: 7%; }
+    .main .work .info h1 {
+      font-size: 36px;
+      margin-bottom: 5%; }
+    .main .work .info h3 {
+      font-size: 18px;
+      margin-bottom: 5%; }
+    .main .work .info p {
+      margin-bottom: 5%; }
+    .main .work .info button {
+      padding: 2% 4%; }
+  .main .work .logo {
+    width: 50%;
+    height: inherit; }
+    .main .work .logo img {
+      object-fit: fill;
+      height: 100%; }
+
+.main .articles {
+  margin-top: 10%; }
+  .main .articles h2 {
+    margin-bottom: 7%; }
+  .main .articles .row {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between; }
+    .main .articles .row:first-of-type {
+      padding-top: 0; }
+    .main .articles .row::before {
+      bottom: -30px;
+      width: 100%; }
+    .main .articles .row .article {
+      width: 45%; }
+      .main .articles .row .article .image {
+        margin-bottom: 5%; }
+      .main .articles .row .article p {
+        margin-top: 5%; }
+      .main .articles .row .article button {
+        margin-top: 5%;
+        padding: 2% 4%; }
+
+.main .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 7%; }
+  .main .cards .card {
+    width: 18%; }
+    .main .cards .card:last-of-type {
+      margin-right: 0; }
+    .main .cards .card img {
+      width: 100%;
+      height: 45%;
+      margin-bottom: 4%;
+      cursor: pointer;
+      transition: box-shadow .5s ease; }
+      .main .cards .card img:hover {
+        box-shadow: 0px 0px 31px 17px rgba(0, 0, 0, 0.53);
+        -webkit-box-shadow: 0px 0px 31px 17px rgba(0, 0, 0, 0.53);
+        -moz-box-shadow: 0px 0px 31px 17px rgba(0, 0, 0, 0.53); }
+    .main .cards .card p {
+      margin-top: 12%;
+      margin-bottom: 12%; }
+    .main .cards .card button {
+      padding: 2% 5%; }
+
+.main .information {
+  margin-top: 4%;
+  margin-bottom: 4%; }
+  .main .information > div {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; }
+    .main .information > div > div {
+      display: flex;
+      align-items: center;
+      width: 45%;
+      margin-right: 4%; }
+      .main .information > div > div:last-of-type {
+        margin-right: 0; }
+      .main .information > div > div > div {
+        margin-right: 7%; }
+        .main .information > div > div > div i {
+          font-size: 36px;
+          margin: 5% 7%; }
+        .main .information > div > div > div h3 {
+          margin-bottom: 4%; }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 45%; }
+    .nav .nav-container .menu h3 {
+      margin-top: 10px; }
+      .nav .nav-container .menu h3::before {
+        bottom: -5px; }
+    .nav .nav-container .menu p {
+      margin-top: 16px; }
+      .nav .nav-container .menu p::before {
+        bottom: -8px; }
+    .nav .nav-container .about h3 {
+      margin-top: 10px; }
+      .nav .nav-container .about h3::before {
+        width: 100%; }
+    .nav .nav-container .about .navCard::before {
+      bottom: -6%; }
+    .nav .nav-container .help > div {
+      flex-wrap: wrap;
+      margin-top: 16%; }
+      .nav .nav-container .help > div::before {
+        bottom: -30%; }
+      .nav .nav-container .help > div i {
+        margin: 0; }
+      .nav .nav-container .help > div p {
+        margin-top: 7%; }
+  .main div i {
+    margin-left: 0;
+    margin-bottom: 2%;
+    margin-top: 4%; }
+  .main .work {
+    flex-direction: column-reverse; }
+    .main .work::before {
+      bottom: -30px; }
+    .main .work .info {
+      width: 100%; }
+    .main .work .logo {
+      width: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%; }
+  .main .articles {
+    margin-top: 58px; }
+    .main .articles::before {
+      display: none; }
+    .main .articles h2 {
+      margin-bottom: 15%; }
+    .main .articles .row {
+      flex-direction: column;
+      padding-top: 0; }
+      .main .articles .row::before {
+        display: none; }
+      .main .articles .row .article {
+        width: 100%;
+        position: relative;
+        margin-bottom: 60px; }
+        .main .articles .row .article::before {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 3px;
+          background: #e0e3e5;
+          position: absolute;
+          bottom: -30px;
+          left: 0px; }
+  .main .cards {
+    flex-wrap: wrap;
+    margin-top: 0; }
+    .main .cards .card {
+      width: 47%;
+      margin-bottom: 75px; }
+  .main .information {
+    margin-top: -20px; }
+    .main .information > div {
+      display: block; }
+      .main .information > div > div {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 30px 0; } }
+
+@media screen and (max-width: 319px) {
+  .main div i {
+    margin-top: 3%; }
+  .main .articles h2::before {
+    width: 100%; }
+  .main .cards .card {
+    width: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  .nav .nav-container .menu p::before {
+    bottom: -10px; }
+  .nav .nav-container .about h3::before {
+    width: 100%; }
+  .nav .nav-container .help > div::before {
+    bottom: -10px; }
+  .main .articles .row::before {
+    bottom: -20px; }
+  .main .information h2 {
+    margin-top: 20px; } }
